@@ -1,5 +1,5 @@
+// Serial 2 Complementer Testbench 
 `timescale 1ns/1ps
-
 module Serial_2_complementer_tb();
    reg clk,reset,x;
    wire q;
