@@ -1,6 +1,6 @@
 module Traffic_signal_4way(
-    input clk, rst,
-    output reg [2:0] way1, way2, way3, way4);
+  input clk, rst,
+  output reg [2:0] way1, way2, way3, way4);
   
 parameter GREEN_SIGNAL   = 30;          // 30 seconds
 parameter YELLOW_SIGNAL  = 5;           // 5 seconds
