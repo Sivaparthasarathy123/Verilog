@@ -1,3 +1,4 @@
+// Asynchronous FIFO
 module Asynchronous_fifo #(parameter DEPTH = 8, DATA_WIDTH = 8)(
    input w_clk, r_clk,
    input w_rst, r_rst,
