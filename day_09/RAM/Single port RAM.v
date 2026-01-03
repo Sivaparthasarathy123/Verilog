@@ -1,5 +1,4 @@
-//Single_port_RAM
-
+//Single port RAM
 module single_port_RAM #(parameter DEPTH = 8, WIDTH = 8)(
   input clk, w_en, 
   input [$clog(DEPTH)-1:0] addr,
