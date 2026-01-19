@@ -16,8 +16,8 @@ module single_port_RAM #(
     always @(posedge clk) begin
         if (w_en) begin
             mem[addr] <= data_in;
-        end 
-        data_out <= mem[addr]; 
+        else
+            data_out <= mem[addr]; 
     end
 
 endmodule
