@@ -9,7 +9,7 @@ module full_adder(
   
   always@(*)begin
     sum   = a ^ b ^ c;
-    carry = (a & b)||(b & c)||(a & c);
+    carry = (a & b)|(b & c)|(a & c);
   end
 endmodule
 
