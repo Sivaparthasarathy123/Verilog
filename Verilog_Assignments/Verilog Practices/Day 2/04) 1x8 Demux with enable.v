@@ -15,6 +15,7 @@ module demux1x8(
     end
 endmodule
 
+// Testbench
 module demux1x8_tb;
     reg D, EN;
     reg [2:0] S;
