@@ -8,8 +8,8 @@ module M_and_S_ff(
      reg master_Q;
 
    initial begin
-     Q=0;
-     Qbar=1;
+     Q    = 0;
+     Qbar = 1;
      master_Q=0;
    end
    
