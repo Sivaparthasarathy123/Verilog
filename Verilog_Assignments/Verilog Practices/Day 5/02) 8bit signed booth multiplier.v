@@ -25,6 +25,7 @@ module booth_multiplier_8bit(
 
 endmodule
 
+// Testbench
 module booth_multiplier_8bit_tb;
 
   reg signed [7:0] A,B;
