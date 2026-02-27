@@ -17,7 +17,7 @@ module greater_than_detector_tb;
       .B(B),
       .GT(GT)
   );
-
+  
   initial begin
     $monitor("Time = %0t | A = %0d | B = %0d | GT = %0d", $time, A, B, GT);
       A = 16'd10; B = 16'd5;  #10;
