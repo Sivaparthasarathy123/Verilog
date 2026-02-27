@@ -17,7 +17,7 @@ module zero_detector_tb;
   );
 
   initial begin
-    $monitor("A = %0d | Z = %0d");
+    $monitor("A = %0d | Z = %0d", A, Z);
       A = 16'd0;  #10;
       A = 16'd5;  #10;
       A = 16'd65535; #10;
