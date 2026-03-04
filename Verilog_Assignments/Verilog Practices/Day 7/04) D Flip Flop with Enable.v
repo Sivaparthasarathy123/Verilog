@@ -9,6 +9,8 @@ module d_ff_en (
   always @(posedge clk) begin
     if (en)
       q <= d;
+    else
+      q <= 0;
     end
   
 endmodule
