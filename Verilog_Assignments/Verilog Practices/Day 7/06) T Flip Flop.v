@@ -30,8 +30,8 @@ module t_ff_tb;
   initial begin
     $monitor("Time = %0t clk = %0b T = %0b Q = %0b",$time,clk,t,q);
     
-    t = 0;
-    #10 t = 1;
+    t = 0;     // NO CHANGE
+    #10 t = 1; // TOGGLE
     #10 t = 1;
     #10 $finish;
   end
