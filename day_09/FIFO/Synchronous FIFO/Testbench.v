@@ -36,7 +36,6 @@ module synchronous_FIFO_tb;
     rst_n = 1;  
     #10;
 
-    
     $display(" --------- FIFO TEST STARTED ---------");
     
     // Write values
@@ -71,12 +70,12 @@ module synchronous_FIFO_tb;
     $display("----------- FIFO FULL -> %0b  ---------", full);
     
     // Empty FIFO completely
-    $display("\n--- Empty FIFO ---");
+    $display("\n----------- Empty FIFO --------------");
     for(i=1; i<=DEPTH; i=i+1) begin
       @(posedge clk);
       r_en = 1;
       #1;
-      $display("data=%0d, full=%b, empty=%b", data_out, full, empty);
+      $display("data = %0d, full = %b, empty = %b", data_out, full, empty);
     end
     r_en = 0;
     $display("------------- FIFO EMPTY -> %0b ---------", empty);
@@ -87,7 +86,7 @@ module synchronous_FIFO_tb;
     @(posedge clk);
     w_en = 1;
     data_in = 200;
-    $display("WRITE: %0d", data_in);
+    $display("WRITE -> %0d", data_in);
     w_en = 0;
     
     // Write and Read
