@@ -35,7 +35,7 @@ data = 108, full = 0, empty = 1
 ------------- FIFO EMPTY -> 1 ---------
 
 ----------- WRITE & READ -----------
-WRITE: 200
+WRITE -> 200
 WRITE -> 44
 READ -> 108
 ------- FIFO TEST COMPLETED -----------
